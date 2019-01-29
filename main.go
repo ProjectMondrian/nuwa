@@ -55,6 +55,7 @@ func main() {
 	for key, value := range count {
 		order = append(order, CountedPixel{Count: value, Pixel: key})
 	}
+	// 降序
 	sort.Sort(order)
 	fmt.Println(order)
 }
